@@ -16,13 +16,19 @@ There are different solutions:
 Instructions:
 
 Install openmpi and raw2gif in your linux computer.
-Compile the file with: mpicxx JuliaSet.cpp -o julia
+
+Compile the file with: 
+
+>mpicxx JuliaSet.cpp -o julia
+
 Execute the executable with:
 >mpirun -np [number of procesors] ./julia [rows] [columns] [real number] [imaginary number] [Tamx] [Tamy]
 
 Example : > mpirun -np 4 ./julia 512 512 -0.8 0.156 4 4
 
 Draw the julia set with:
-raw2gif -s [rows] [columns] -p -p vgaPalette.txt Salida > [nameOfFile].gif
+
+>raw2gif -s [rows] [columns] -p -p vgaPalette.txt Salida > [nameOfFile].gif
+
 Example : raw2gif -s 512 512 -p vgaPalette.txt Salida > salida.gif
 
