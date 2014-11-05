@@ -1,6 +1,6 @@
 JuliaSet
 ========
-Diferent solutions to draw a Julia set with one or more processors (using MPI).
+Diferent solutions for drawing a Julia set with one or more processors (using MPI).
 <img src="http://i.imgur.com/RAOgAer.png" />
 
 
